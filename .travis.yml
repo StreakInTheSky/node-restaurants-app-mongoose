@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: mErwJUA/hfFL5jbmftSlmEFdGlWqCrulGU/L1PVU1vEOvyh6D4rODJ9MCmjG+Ede3ABEAVIwYMnZorM3NR12DQCJJFMdqkcLh7qvfu1WXso/8NHxMf/6qSiIPEsNSDAnWPi58Y6NOE9mU+CCahwruitfA7UXGn/gYFXyODNCVM6SeWuFAxwFj9SFSLeu4hYB3uuz5S9lQGAuc+3moNyP5jvjjBUDYgwubx3q0ZvpTdPiW1lqU6p5wjy/xQhVsN3eOodgYRQkWjgBXH8Aumk92dCOiPVCfwrSG9fGptzNuXrhcGC0rvngPvUwSIIOPKjgkq9fA40CGBfNkSCjn3IyV2U9/GJ8dCuSBGAjRGIhO3jXKYAAMQp4af+uH3n7cYMenqVI3PVchdron93OkKnLuABG2/30J5HLJyR0O7DGhaiqvnRTBzFZ9AuajIOn6Eo3ipGI3qDvqjXnV5BH1pDzmlQoN7EMha/GstV5QrXPIhgPQBlKO03ZORGs8jjYB8pG8Z2tshNgGFeFDyI/kQeUUp5rOwN4fZdYML6uBQrw1IhtpwTP2MEb/riDFngy/c58HFciIXAVwpNc09c4fr8Sbk14TB0EOSoiwzqx5kWZoPpZxCsdhw6J8UzOhILKvwRHlvdYwJoooQCZV/vmNLhiYZ7isauysnDkoezdfNPTdc4=
+  app: hidden-crag-42428
+  on:
+    repo: StreakInTheSky/node-restaurants-app-mongoose
+    branch: feature/with-tests
